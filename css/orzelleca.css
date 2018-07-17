@@ -1,0 +1,1092 @@
+/* 
+    Document   : orzelleca
+    Created on : 6-giu-2013, 10.54.54
+    Author     : Martino
+    Description:
+        Purpose of the stylesheet follows.
+*/
+/*giallo orzelleca E2A60E*/
+@font-face {
+    font-family: 'UbuntuBold';
+    src: url('font/ubuntu-b.eot');
+    src: url('font/ubuntu-b.eot') format('embedded-opentype'),
+        url('font/ubuntu-b.woff') format('woff'),
+        url('font/ubuntu-b.ttf') format('truetype'),
+        url('font/ubuntu-b.svg#UbuntuBold') format('svg');
+}
+@font-face {
+    font-family: 'UbuntuBoldItalic';
+    src: url('font/ubuntu-bi.eot');
+    src: url('font/ubuntu-bi.eot') format('embedded-opentype'),
+        url('font/ubuntu-bi.woff') format('woff'),
+        url('font/ubuntu-bi.ttf') format('truetype'),
+        url('font/ubuntu-bi.svg#UbuntuBoldItalic') format('svg');
+}
+
+@font-face {
+    font-family: 'UbuntuRegular';
+    src: url('font/ubuntu-r.eot');
+    src: url('font/ubuntu-r.eot') format('embedded-opentype'),
+        url('font/ubuntu-r.woff') format('woff'),
+        url('font/ubuntu-r.ttf') format('truetype'),
+        url('font/ubuntu-r.svg#UbuntuRegular') format('svg');
+}
+@font-face {
+    font-family: 'UbuntuItalic';
+    src: url('font/ubuntu-ri.eot');
+    src: url('font/ubuntu-ri.eot') format('embedded-opentype'),
+        url('font/ubuntu-ri.woff') format('woff'),
+        url('font/ubuntu-ri.ttf') format('truetype'),
+        url('font/ubuntu-ri.svg#UbuntuItalic') format('svg');
+}
+@font-face {
+    font-family: 'UbuntuMediumItalic';
+    src: url('font/ubuntu-mi.eot');
+    src: url('font/ubuntu-mi.eot') format('embedded-opentype'),
+        url('font/ubuntu-mi.woff') format('woff'),
+        url('font/ubuntu-mi.ttf') format('truetype'),
+        url('font/ubuntu-mi.svg#UbuntuMediumItalic') format('svg');
+}
+@font-face {
+    font-family: 'UbuntuMedium';
+    src: url('font/ubuntu-m.eot');
+    src: url('font/ubuntu-m.eot') format('embedded-opentype'),
+        url('font/ubuntu-m.woff') format('woff'),
+        url('font/ubuntu-m.ttf') format('truetype'),
+        url('font/ubuntu-m.svg#UbuntuMedium') format('svg');
+}
+
+body { 
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: 'UbuntuRegular';
+    margin: 0;
+    padding: 0;
+    background: url('../img/FONDO.jpg');
+    color:  #353332;
+
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style-type: none;
+}
+.left{
+    position: absolute;
+    top: 0;
+    left: 0;  
+    width: 700px;
+    height: 595px;
+}
+.right{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 280px;
+    height: 400px;   
+    z-index: 99;
+    background:black;
+    background:  url('../img/lista-regali-OFF.png');
+    cursor: pointer;
+}
+.right:hover{
+    background: url('../img/lista-regali-ON.png');
+}
+
+.r_nozze{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 285px;
+    height: 99px;   
+    z-index: 99;
+    background:black;
+    background:  url('../img/liste-nozze-off.png');
+    cursor: pointer;
+}
+
+.r_nozze:hover{
+    background: url('../img/liste-nozze-on.png');
+}
+
+.r_regali{
+    position: absolute;
+    top: 105px;
+    right: 0px;
+    width: 285px;
+    height: 99px;   
+    z-index: 99;
+    background:black;
+    background:  url('../img/liste-regali-off.png');
+    cursor: pointer;
+}
+
+.r_regali:hover{
+    background: url('../img/liste-regali-on.png');
+}
+
+.r_facebook{
+    position: absolute;
+    top: 210px;
+    right: 0px;
+    width: 102px;
+    height: 73px;   
+    z-index: 99;
+    background:black;
+    background:  url('../img/facebook-off.png');
+    cursor: pointer;
+}
+
+.r_facebook:hover{
+    background: url('../img/facebook-on.png');
+}
+
+.r_collezione{
+    position: absolute;
+    bottom: 79px;
+    right: 0px;
+    width: 196px;
+    height: 290px;   
+    z-index: 99;
+    background:black;
+    background:  url('../img/villeroyOFF.png');
+    cursor: pointer;
+}
+
+.r_collezione:hover{
+    background: url('../img/villeroyON.jpg');
+}
+
+#barra_footer{
+    width: 100%;
+    height: 79px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #353332;
+    z-index: 98;
+    color: white;
+
+}
+#barra_footer label{
+    color:gainsboro;
+}
+.box{
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 200px;   
+    border-left:1px solid white; 
+    overflow: hidden;
+}
+.box.formazione{
+    top: 0;
+    background: #666666;
+    border-bottom: 10px solid white;
+
+}
+.box.regali{
+    top: 200px;
+    background: url('../img/Back-app.jpg') no-repeat;
+    z-index: 1;
+    font-size: 13px;
+
+}
+.box.oggetti{
+    top: 400px;
+    background: white;
+
+}
+.box.nozze{
+    top: 600px;
+
+    height: 79px;
+    z-index: 1;
+
+}
+#liste,#fb{
+    float:left;
+}
+#hidden_out{
+    width: 150px;
+    height: 180px;
+    position: absolute;
+    top: 20px;
+    left: -150px;
+    background: red;
+    z-index: 2;
+    background: url('../img/box-giallo.jpg') no-repeat;
+}
+#opened_out{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#opened_form{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#hidden_form{
+    width: 150px;
+    height: 180px;
+    position: absolute;
+    top: 20px;
+    left: -150px;
+    z-index: 1;
+}
+#hidden_form1{
+    width: 150px;
+    height: 180px;
+    position: absolute;
+    top: 20px;
+    right: -150px;
+    z-index: 1;
+}
+#orologi{
+    width: 150px;
+    height: 30px;
+    background: #E2CFA8;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    border: white 1px solid;
+    border-left: none;
+    border-right:none;
+    margin-left: -1px;
+    cursor: pointer;
+    font-family: 'UbuntuMedium';
+    color: #353332;
+    text-align: center;
+
+
+}
+#gioielli{
+    width: 150px;
+    height: 30px;
+    background: #E2A60E;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: white 1px solid;  
+    border-right:  none;
+    margin-left: -1px;
+    cursor: pointer;
+    color: #353332;
+    font-family: 'UbuntuMedium';
+    text-align: center;
+
+}
+#orologi p , #gioielli p{
+    margin-top: 7px;
+}
+#gioielli:hover , #orologi:hover{
+    color: white;
+}
+.img_form{
+    float:left;
+}
+#logo_orz{
+    width: 266px;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    margin-left: -133px;
+    background: url('../img/logo.png');
+    cursor: pointer;
+}
+.categorie{
+    position: absolute;
+    top: 32.5px;
+    cursor: pointer;
+    color: white;
+    /*    display:   none;*/
+}
+.categorie a{
+    color:white;
+}
+.categorie a:hover{
+    color: goldenrod;
+}
+#cat1{
+    left: 20px;
+}
+#cat2{
+    left: 150px;
+}
+#cat3{
+    right: 439px;
+}
+#cat4{
+    right: 315px;
+}
+
+.titolo{
+    width: 150px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 17px;
+    z-index: 4;
+    background: #343231;
+    font-family: 'UbuntuBold';
+
+
+}
+.titolo p{
+    margin-left: 20px;
+    margin-top: -1px;
+    color: white;
+}
+#titolo_regali{
+    margin-top: 3px;
+}
+#app-regali{
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+#nome{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 4;
+    font-size: 22px;
+    line-height: 20px;
+    width: 130px;
+    color: #353332;
+    font-family: 'UbuntuMedium';
+    margin-left: 10px;
+
+
+}
+#nome p{
+    word-break:    keep-all;
+
+}
+#prezzo{
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    z-index: 4;
+    font-size: 17.5px;
+    color: #353332;
+    font-family: 'UbuntuMedium';
+    margin-left: 10px;
+
+
+
+}
+#prezzo label{
+    font-size: 23.5px;
+
+}
+#vedi_tutti{
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    cursor: pointer;
+}
+#puls_cerca{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+#uomo{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+#donna{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+
+}
+input{
+    cursor: pointer;
+
+}
+input[type='radio']:before { /* Contenuto generato per le label associate ai radio button */
+    content: "";
+    width: 13px; 
+    height: 13px; 
+    border: solid 1px  #666666;
+    -webkit-border-radius: 7.5px; 
+    border-radius: 7.5px; /* Border-radius: 7.5px = metà di larghezza e altezza */
+    background: #fff;
+    cursor: pointer;
+    position: absolute; /* Posizioniamo il contenuto generato rispetto alla label */
+    top: 3px; /* Spostamento verticale */
+    left: 2px; /* Spostamento orizzontale */
+
+}
+input[type='radio']:checked:after { /* Segno di spunta dei radio button e suo colore */
+    content: "";
+    display: block; /* Display: block per centrare il segno di spunta orizzontalmente */
+    width: 6px; /* Creiamo un cerchio più piccolo */
+    height: 6px; /* Anche in altezza */
+    -webkit-border-radius: 4px; 
+    border-radius: 4px; 
+    position: absolute;
+    top: 6px;
+    left: 5px;
+
+    background-color: #E2A60E; /* Colore di sfondo */
+    border: solid 1px #C68902;
+
+}
+#uomo label{
+    margin-top: 1px;
+    margin-left: 2px;
+}
+#donna label{
+    margin-top: 1px;
+
+    margin-left: 2px;
+
+}
+#evento{
+    position: absolute;
+    width: 80px;
+    top: 70px;
+    left: 18px;
+    overflow: scroll;
+    background: #F3F1F0;
+    /*    border: none;*/
+    cursor: pointer;
+
+}
+#evento option{
+    background: #F3F1F0;
+
+
+}
+.layout-slider{
+    margin-top: 120px;
+    margin-left: 25px;
+    cursor: pointer;
+
+}
+#fondo_scritta{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index:1 ;
+    width: 150px;
+    height: 180px;
+    background:  #f9fcd0;
+    opacity:0.6;
+}
+#fascia{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 150px;
+    height: 30px;
+    background: #E2CFA8;
+    font-size: 13px;
+
+}
+#fascia label{
+    font-size: 18px;
+    text-decoration: line-through;
+    margin-left: 3px;
+}
+#fascia p{
+    margin-top: 3px;
+}
+#valida{
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 9.5px;
+    text-align: center;
+}
+#piu{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top:60px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/****PAGINA PRODOTTI****/
+#holder{
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+}
+#itemContainer{
+    margin-left: -60px;
+    margin-top: -12px;
+}
+
+.prodotto{
+    width: 310px;
+    height: 130px;
+    margin-left: 25px;
+    margin-top: 17px;
+    background: url('../img/prodotto_off.png') no-repeat;
+    float:left;
+    cursor: pointer;
+}
+.prodotto:hover{
+    background:  url('../img/prodotto_on.png') no-repeat;
+}
+.img_prodotto{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 20px;
+    float:left;
+    background-size:contain;
+}
+.descrizione_prodotto{
+    width:170px;
+    height: 88px;
+    float: left;
+    margin-left: 15px;
+    font-size: 13px;
+}
+.descrizione_prodotto p{
+    margin-bottom: -5px;
+}
+.offerta_prodotto{
+    font-size: 10px;
+    color:    #999 ;
+    width: 180px;
+}
+
+.prezzo_prodotto{
+    font-size: 25px;
+    color: #E2A60E;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+.sconto_prodotto{
+    font-size: 14px;
+
+
+}
+.sconto_prodotto label{
+    font-size: 16px;
+
+}
+/****CHI SIAMO*****/
+#container_chi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -474px;
+    margin-top: -415px;
+    width: 948px;
+    height: 742px;
+    background: url('../img/foglio_base2.png') no-repeat;
+}
+#descrizione_chi{
+    font-size:  13px;
+    width: 530px;
+    height: 490px;
+    margin-top: 148px;
+    margin-left: 225px;
+}
+#container_chi ul{
+
+    margin-top: 2px;
+    margin-left: -20px;
+
+}
+#next{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    right: -10px;
+    top: 233px;
+    z-index: 1;
+    cursor: pointer;
+    background: url('../img/dx_off.png');
+}
+#next:hover{
+    background: url('../img/dx_on.png');
+
+}
+#prec{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    left: 0px;
+    top: 233px;
+    z-index: 1;
+    cursor: pointer;
+    display: none;
+    background: url('../img/sx_off.png');
+
+
+}
+#prec:hover{
+    background: url('../img/sx_on.png');
+
+}
+#chi1, #chi2,#chi3{
+    position: absolute;
+    left: 25px;
+    top: 8px;
+    width: 530px;
+    height: 490px;
+    overflow: hidden;
+
+}
+#chi2,#chi3{
+    display: none;
+}
+
+
+#showcase p {
+    text-align: left;
+    width: 400px;
+}
+#showcase ul{
+    text-align: left;
+}
+#showcase div label{
+    color: #E2A60E;    
+}
+#showcase div b{
+    color: #353332;
+}
+#showcase div .storia{
+    color:   #959595;
+    width: 400px;
+    position: absolute;
+    left: 37px;
+    top: 76px;
+}
+.lastoria b{
+    position: absolute;
+    left: 37px;
+    top: 53px;
+}
+#showcase div .filosofia{
+    color:   #959595;
+    width: 400px;
+    position: absolute;
+    top: 138px;
+    left: 34px;
+}
+.lafilosofia b{
+    position: absolute;
+    left: 34px;
+    top: 113px;
+}
+
+#showcase ul{
+    font-size: 12px;
+}
+#showcase ul b{
+    font-size: 13px;
+}
+/****PAGINA OGGETTO*****/
+
+#vetrina{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -283.5px;
+    margin-top: -255.5px;
+    width: 567px;
+    height: 570px;
+    background: url('../img/foglio-base.png') no-repeat;
+}
+#prenota{
+    cursor: pointer;
+}
+#nome_oggetto{
+    font-family: 'UbuntuMedium';
+    font-size: 23px;
+    margin-left: 40px;
+    margin-top: -15px;
+}
+#offerta_oggetto{
+    margin-left: 40px;
+    margin-top: -30px;
+    float:left;
+
+}
+#prezzo_oggetto{
+    font-size: 38px;
+    color:  #E2A60E;
+    margin-left: 40px;
+    margin-top: -40px;
+}
+#prezzo_oggetto label{
+    font-size: 28px;
+}
+#sconto_oggetto{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: -40px;
+
+}
+
+#sconto_oggetto label{
+    text-decoration: line-through;
+}
+#descrizione{
+    font-size: 13px;
+    line-height: 16px;
+    margin-left: 40px;
+    margin-top: -5px;
+
+}
+#prenota{
+    margin-top: -27px;
+    margin-left: 350px;
+}
+#img_oggetto{
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-top: 20px;
+    background-size: contain;
+}
+/***lista regali***/
+#c4 img{
+    margin-top: 35px;
+    margin-left: 29px;
+
+}
+#c5 img{
+    margin-top: 13px;
+    margin-left: 33px;
+}
+#c6 img{
+    margin-top: 37px;
+    margin-left: 45px;
+}
+#c4{
+    left: 30px;
+}
+#c5{
+    left: 250px;
+}
+#c6{
+    left: 470px;
+}
+#s4{
+    position: absolute;
+    top: 300px;
+    left: 103px;
+}
+#s5{
+    position: absolute;
+    top: 300px;
+    left: 303px;
+}
+#s6{
+    position: absolute;
+    top: 300px;
+    left: 526px; 
+    text-align: center;
+}
+/***PARTNERS***/
+#c1 img{
+    margin-top: 50px;
+    margin-left: 15px;
+
+}
+#c2 img{
+    margin-top: 35px;
+    margin-left: 33px;
+}
+#c3 img{
+    margin-top: 35px;
+    margin-left: 35px;
+}
+.cerchio{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 5px solid #E2A60E;
+    background: #E2A60E 200px 200px;
+    position: absolute;
+    top: 100px;
+}
+.cerchio:hover{
+    background:  #F3F1F0 ;
+}
+#c1{
+    left: 30px;
+}
+#c2{
+    left: 250px;
+}
+#c3{
+    left: 470px;
+}
+#s1{
+    position: absolute;
+    top: 300px;
+    left: 90px;
+}
+#s2{
+    position: absolute;
+    top: 300px;
+    left: 310px;
+}
+#s3{
+    position: absolute;
+    top: 300px;
+    left: 480px;
+    text-align: center;
+}
+#s1:hover,#s2:hover,#s3:hover,#s4:hover,#s5:hover,#s6:hover{
+    color:#E2A60E;
+}
+#partners{
+    width: 670px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -355px;
+    margin-top: -250px;
+    font-size: 21px;
+
+
+}
+#liste_regali{
+    width: 670px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -335px;
+    margin-top: -250px;
+    font-size: 21px;
+
+
+}
+#partners div{
+    cursor: pointer;
+}
+
+/***SHOWROOMS****/
+#showroom{
+    width: 100%;
+    height: 100%;
+    color:#353332;
+    font-size: 15px;
+}
+#avellino{
+    float: left;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 45px;
+}
+#benevento{
+    margin-top: 30px;
+    margin-left: 20px;
+    float: left;
+    width: 300px;
+}
+.home3{
+    width: 63px;
+    height: 26px;
+    background: url('../img/homeoff.png');
+    cursor: pointer;  
+}
+.home3:hover{
+    background: url('../img/homeon.png');
+
+}
+.prec{
+    width: 63px;
+    height: 26px;
+    background: url('../img/Precedente-off.png');
+    cursor: pointer;  
+    position: absolute;
+    bottom: 34px;
+    left: 400px;
+}
+.prec:hover{
+    background: url('../img/Precedente-on.png');
+
+}
+.home2{
+    position: absolute;
+    bottom: 34px;
+    left: 324px;
+    width: 63px;
+    height: 26px;
+    background: url('../img/homeoff.png');
+    cursor: pointer;
+}
+.home5{
+    position: absolute;
+    bottom: 30px;
+    left: 245px;
+    width: 63px;
+    height: 26px;
+    background: url('../img/homeoff.png');
+    cursor: pointer;
+}
+.home2:hover{
+    background: url('../img/homeon.png');
+
+}
+#h2{
+    position: absolute;
+    bottom: -13px;
+    left: 316px;
+    width: 63px;
+    height: 26px;
+    background: url('../img/homeoff.png');
+    cursor: pointer;
+}
+#h3{
+    position: absolute;
+    bottom: 44px;
+    left: 326px;
+    width: 63px;
+    height: 26px;
+    background: url('../img/homeoff.png');
+    cursor: pointer;
+}
+#h3:hover{
+    background: url('../img/homeon.png');
+}
+.center{
+    width: 700px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -363px;
+    margin-top: -300px;
+}
+
+#table_orologi{
+    margin-left: 30px;
+}
+.nome_s{
+    font-size: 24px;
+    font-family: 'UbuntuMedium';
+    margin-top: 0px;
+
+}
+.bold_show{
+    font-family: 'UbuntuBold';
+    margin-bottom: -10px;
+    margin-top: -10px;
+
+}
+#showroom a{
+    color: #E2A60E;
+    font-family: 'UbuntuMedium';
+
+}
+#showroom a:hover{
+    color:  #353332;
+}
+
+/****SERVIZI****/
+#servizi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -474px;
+    margin-top: -415px;
+    width: 948px;
+    height: 742px;
+    background: url('../img/foglio_base2.png') no-repeat;
+}
+#descrizione_servizi{
+    font-size:  13px;
+    width: 530px;
+    height: 490px;
+    margin-top: 168px;
+    margin-left: 250px;
+    overflow: hidden; 
+}
+#descrizione_servizi ul{
+    width: 400px;
+    color:   #959595;
+    line-height: 1.3;
+
+} 
+
+#descrizione_servizi b{
+    color: #353332;
+}
+#descrizione_servizi label{
+    color: #E2A60E;   
+}
+#table_prodotti th,#table_prodotti td{
+    border: 1px solid #F3F1F0;
+    text-align: center;
+
+}
+#titolo {
+    font-size:25px;
+    color:black;
+    font-weight:bold;
+}
+
+#email{
+    margin-left: 77px;
+}
+.label_invia{
+    margin-left: -121px;
+}
+#email_inviata{
+    font-size: 50px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin-left: -300px;
+    margin-top: -100px; 
+    text-align: center;
+}
+#email_inviata label{
+    font-size: 30px;
+}
+
+/**********ORDINA**********/
+#container_ordina{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -283.5px;
+    margin-top: -275px;
+    width: 567px;
+    height: 570px;
+    background: url('../img/foglio-base.png') no-repeat;
+    text-align: center;
+    padding-right: 10px;
+} 
+#tipo_pag{
+    font-weight: bold;
+}
+#pagamento_email{
+    margin-left: 35px;
+}
+#att{
+    font-size: 11px;
+    margin-top: 160px;
+}
